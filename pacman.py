@@ -11,8 +11,26 @@ from turtle import *
 from freegames import floor, vector
 
 writer = Turtle(visible=False)
-# Almacena cantidad de galletas comidas por pacman
+#Almacen de Scores
 state = {'score': 0}
+writer.goto(127, 135)
+writer.color('blue')
+writer.write("Jesus Paulin", font = ('Arial',10,'normal'))
+writer.goto(127, 125)
+writer.color('blue')
+writer.write("A00829483", font = ('Arial',10,'normal'))
+writer.goto(127, 115)
+writer.color('white')
+writer.write("Ana Lucia Vea Téllez", font = ('Arial',7,'normal'))
+writer.goto(127, 100)
+writer.color('white')
+writer.write("A00227499", font = ('Arial',10,'normal'))
+writer.goto(127, 90)
+writer.color('yellow')
+writer.write("Adrian Luevanos Castillo", font = ('Arial',7,'normal'))
+writer.goto(127, 80)
+writer.color('yellow')
+writer.write("A00827701", font = ('Arial',10,'normal'))
 
 # Hace invisible la -> de turtle, se crean dos objetos de la clase turtle
 path = Turtle(visible=False)
