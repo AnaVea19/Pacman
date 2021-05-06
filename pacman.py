@@ -1,5 +1,5 @@
 # Ana Lucia Vea Téllez - A00227499
-# 
+
 # Reflexión - qué aprendieron
 # 06/05/2021
 
@@ -96,7 +96,7 @@ def valid(point):
 def world():
     "Draw world using path."
     bgcolor('black')
-    path.color('blue')
+    path.color('white')
 
     # Recorre toda la lista de (tiles)
     for index in range(len(tiles)):
@@ -115,11 +115,11 @@ def world():
             if tile == 1:
                 path.up()
                 path.goto(x + 10, y + 10)
-                path.dot(2, 'white')
+                path.dot(10, '#D2691E')
 
 
 def move():
-    colores = ['red', 'green', 'pink', 'white']
+    colores = ['red', 'green', 'pink', 'blue']
     "Move pacman and all ghosts."
     writer.undo()
     #writer.write(state['score'])
@@ -213,7 +213,7 @@ hideturtle()
 tracer(False)
 # Mueve la turtle writer a la posición (160,160)
 writer.goto(160, 160)
-writer.color('white')
+writer.color('blue')
 writer.write(state['score'])
 # Activar el escuchar los elementos del teclado
 listen()
