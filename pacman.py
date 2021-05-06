@@ -165,10 +165,10 @@ def move():
         else: 
             #Se actualiza la dirección del movimiento
             options = [
-                vector(5, 0),
-                vector(-5, 0),
-                vector(0, 5),
-                vector(0, -5),
+                vector(7, 0),
+                vector(-7, 0),
+                vector(0, 7),
+                vector(0, -7),
             ]
             # En plan guarda la nueva dirección del fantasma aleatoriamente de la lista options
             # Aqui se tiene que cambiar para hacer a los fantasmas inteligentes
