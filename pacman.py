@@ -1,4 +1,5 @@
 # Ana Lucia Vea Téllez - A00227499
+# Jesus Paulin Tamez - A00829483
 
 # Reflexión - qué aprendieron
 # 06/05/2021
