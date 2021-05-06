@@ -1,5 +1,5 @@
 # Ana Lucia Vea Téllez - A00227499
-# Rodrigo Montelongo Pinales - A00827757
+# 
 # Reflexión - qué aprendieron
 # 06/05/2021
 
