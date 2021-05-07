@@ -177,25 +177,59 @@ def move():
 
     k = 0
     # [vector(-180,160), vector(5,0)]
-    for point, course in ghosts:
+   for point, course in ghosts:
         # Valida si el fantasma point se puede mover en course
         if valid(point + course):
             point.move(course)
         #Si no se puede mover el fantasma en esa dirección 
         else: 
             #Se actualiza la dirección del movimiento
-            options = [
-                vector(7, 0),
-                vector(-7, 0),
-                vector(0, 7),
-                vector(0, -7),
-            ]
-            # En plan guarda la nueva dirección del fantasma aleatoriamente de la lista options
-            # Aqui se tiene que cambiar para hacer a los fantasmas inteligentes
-            # los fantasmas no siempre se moveran porque puede que el nueva choice no es valido            
-            plan = choice(options)
-            course.x = plan.x
-            course.y = plan.y
+            #options = [
+              #  vector(7, 0),
+               # vector(-7, 0),
+                #vector(0, 7),
+                #vector(0, -7),
+               
+            if pacman.x > point.x:
+                plan = vector(5,0)
+                course.x = plan.x
+                course.y = plan.y
+                if valid(point + course):
+                    point.move(course)
+                    
+            if pacman.x < point.x:
+                plan = vector(-5,0)
+                course.x = plan.x
+                course.y = plan.y
+                if valid(point + course):
+                    point.move(course)
+                    
+            if pacman.y > point.y:
+                plan = vector(0,5)
+                course.x = plan.x
+                course.y = plan.y
+                if valid(point + course):
+                    point.move(course)
+                    
+            if (pacman.y < point.y):
+                plan = vector(0,-5)
+                course.x = plan.x
+                course.y = plan.y
+                if valid(point + course):
+                    point.move(course)
+                    
+            else:
+                option = [
+                    vector (0,5),
+                    vector (0,-5),
+                    vector (5,0),
+                    vector (0,-5),
+                    ]
+                
+                plan = choice(option)
+                course.x = plan.x
+                course.y = plan.y
+                point.move(course)
 
         # Levanta el lapiz    
         up()
